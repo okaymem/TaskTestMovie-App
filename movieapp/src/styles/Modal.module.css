@@ -1,0 +1,45 @@
+.buttonStarRated{
+    background-repeat:no-repeat;
+    width: 65px;
+    height: 28px;
+    background-image: url(../images/starrated.png);
+    background-color: white;
+    color: black;
+    background-position: left;
+    padding-left: 30px;
+}
+.buttonStarUnrated{
+    background-repeat:no-repeat;
+    width: 65px;
+    height: 28px;
+    background-image: url(../images/starRate.png);
+    background-color: white;
+    color: black;
+    background-position: left;
+    padding-left: 30px;
+}
+.buttonStarRated:hover{
+    color: black;
+    background-color: white;
+}
+.buttonStarUnrated:hover{
+    color: black;
+    background-color: white;
+}
+.buttonSave{
+    background-color:#9854F6;
+    margin-left: 25px;
+    
+}
+.buttonSave:hover{
+    background-color:#9854F6;
+}
+.buttonRemove{
+     font-size: 14px;
+    font-weight: 600;
+    line-height: 19.6px;
+    text-align: left;
+    color:#9854F6;
+    margin-left: 16px;
+    margin-top: 16px;
+}

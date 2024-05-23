@@ -1,0 +1,63 @@
+.navbar {
+  background-color: #F2EBF9;
+  height: 98.35%;
+  width: 280px;
+  padding: var(--mantine-spacing-md);
+  display: flex;
+  flex-direction: column;
+  border-right: rem(1px) solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+  
+}
+
+.navbarMain {
+  flex: 1;
+  margin-top: var(--mantine-spacing-xl);
+}
+
+.title {
+  text-transform: uppercase;
+  letter-spacing: rem(-0.25px);
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: var(--mantine-font-size-sm);
+  color: light-dark(var(--mantine-color-gray-7), var(--mantine-color-dark-1));
+  padding: var(--mantine-spacing-xs) var(--mantine-spacing-sm);
+  border-radius: var(--mantine-radius-sm);
+  font-weight: 500;
+
+  &:hover {
+    background-color:#E5D5FA;
+    color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+
+   
+  }
+
+}
+
+.linkIcon {
+  color: light-dark(var(--mantine-color-gray-6), var(--mantine-color-dark-2));
+  margin-right: var(--mantine-spacing-sm);
+  width: rem(25px);
+  height: rem(25px);
+}
+
+.footer {
+  border-top: rem(1px) solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+  padding-top: var(--mantine-spacing-md);
+}
+.pic{
+  width: 179px;
+  height:36px;
+  background-image: url('../images/logo.png');
+  margin-bottom: 80px;
+  margin-left: 24px;
+  margin-top: -13px;
+}
+.linkActive{
+  background-color:#E5D5FA;
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+}

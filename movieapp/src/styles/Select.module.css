@@ -1,0 +1,11 @@
+select{
+  background-image: url(../images/arrow.png);
+  background-repeat:no-repeat ;
+  background-position: top 14px right 15px;
+}
+
+  .selectBox svg{
+   display:none
+  }
+  
+  

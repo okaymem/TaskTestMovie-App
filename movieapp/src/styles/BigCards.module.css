@@ -1,0 +1,88 @@
+.wrapper{
+    
+    width: 1200px;
+    gap: 16px;
+    margin-top: 24px;
+}
+.cardWrapper{
+    width: 66%;
+    background-color: #fff;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    position: relative;
+}
+.cardInside{
+    display: flex;
+    flex-direction: column;
+}
+.poster{
+    margin-left: 24px;
+}
+.allContent{
+     background-color: #f4f5fafd;
+}
+.title{
+    margin-top: -10px;
+    margin-left: 16px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.2px;
+    text-align: left;
+    color: #9854F6;
+
+}
+.date{
+    color: #7B7C88;
+    margin-left: 16px;
+    margin-bottom: 0px;
+}
+.star{
+    margin-top: 20px;
+    margin-left: 16px;
+    margin-right: 4px;
+    width:  29px;
+    height: 29px;
+    background-image: url(../images/star.png);
+    display: inline-block;
+}
+.rating{
+    margin-top: 0;
+  
+}
+.mark{
+    display: inline-block;
+    transform: translateY(-9px);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+    color: black;
+}
+.voters{
+    color: #7B7C88;
+    display: inline-block;
+    margin: 0;
+}
+.selects{
+    display: flex;
+}
+.ModalRate{
+    position: absolute;
+    top: 24px;
+    right:10px;
+    padding-left: 20px;
+}
+.greyText{
+    color: #7B7C88;
+    position: absolute;
+}
+.darkText{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    margin-left: 164px;
+}
