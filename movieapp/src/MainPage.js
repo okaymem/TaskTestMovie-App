@@ -84,7 +84,7 @@ useEffect(()=>{
 
   async function getContent() {
     try {
-        const response = await fetch(`http://localhost:3001/?genre=${gen}&page=${page}&rateFrom=${rateFrom}&rateTo=${rateTo}&sortby=${sortby}&year=${year}`);
+        const response = await fetch(`https://task-test-movie-app-deploy.vercel.app/?genre=${gen}&page=${page}&rateFrom=${rateFrom}&rateTo=${rateTo}&sortby=${sortby}&year=${year}`);
         const { results } = await response.json();
         console.log(results);
         chcont(results)
@@ -96,7 +96,7 @@ useEffect(()=>{
 
   async function getGenres() {
     try {
-        const response = await fetch(`http://localhost:3001/getgenres`);
+        const response = await fetch(`http://https://task-test-movie-app-deploy.vercel.app/getgenres`);
         const genres = await response.json();
         console.log(genres);
         setGenres(genres.genres.map(genre => ({value:genre.id, label:genre.name})))
