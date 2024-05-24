@@ -4,7 +4,7 @@ function FilmDescription({videokey, description, production_companies}){
     return(
 <div className={styles.filmDescriptionWrapper}>
     <h3 className={styles.title}>Trailer</h3>
-{videokey ? <iframe style={{borderRadius: '9px', marginLeft: '24px'}} width="500" height="281" src={`https://www.youtube.com/embed/${videokey}`} frameborder="0" allowfullscreen></iframe> 
+{videokey ? <iframe className={styles.video} src={`https://www.youtube.com/embed/${videokey}`} frameborder="0" allowfullscreen></iframe> 
 :null}
 <hr className={styles.line}/>
 <h3 className={styles.title} style={{marginTop:'0px'}}>Description</h3>

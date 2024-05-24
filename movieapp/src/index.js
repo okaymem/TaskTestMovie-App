@@ -7,10 +7,7 @@ import Rated from './Rated';
 import { Film } from './Film';
 import Errorpage from './Errorpage';
 const router=createBrowserRouter([
-  {
-    path:'*',
-    element: <Errorpage/> 
-  },
+  
   {
     path:'/',
    
@@ -26,6 +23,10 @@ const router=createBrowserRouter([
    
     element:<Film/>
   },
+  {
+    path:'*',
+    element: <Errorpage/> 
+  }
 ])
 const root = document.getElementById('root');
 ReactDOM.createRoot(root).render(

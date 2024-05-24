@@ -123,10 +123,14 @@
     font-weight: 500;
     line-height: 20px;
     text-align: left;
+    display: block;
+    transform: translateY(2px);
 }
 .genres{
     position: absolute;
     bottom: 3px;
+    display: flex;
+    gap: 8px
 }
 .sortSelect{
     margin-left: auto;
@@ -162,10 +166,18 @@
 .pagination{
     margin: 24px 112px 82px auto
 }
-.selectss{
-    background-color:#9854F6;
+
+.pageRatedTitle{
+    display: inline-block;
+    margin-top: 35px;
+    margin-left: -23px;
 }
-@media (max-width: 450px){
+.inputSearch{
+    width: 490px; 
+    margin-top:39px;
+    margin-right: -29px;
+}
+@media (max-width: 414px){
     .wrapper{
        margin-right: auto;
         width:400px
@@ -185,4 +197,22 @@
         margin: 24px 0 0 0;
 
     }
+    .breadcrumbs{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .ratedWrapper{
+        width:400px
+    }
+    .header{
+        flex-direction:column ;
+    }
+    .pageRatedTitle{
+        text-align: center;
+    }
+    .inputSearch{
+        width:400px;
+        margin-top: 20px;
+    }
+    
     }

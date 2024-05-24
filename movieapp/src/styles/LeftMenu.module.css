@@ -64,14 +64,21 @@
 .barWrapper{
   transition: 0.5s;
 }
-@media (max-width: 450px){
+@media (max-width: 414px){
   .barWrapper{
     position: absolute;
     top: -260px;
-    z-index: 1;
-    width: 253px
+    z-index: 2;
+    width: 253px;
+    border-radius: 10px;
+  }
+  .navbar{
+    border-radius: 10px;
+  }
+  .navbarMain{
+    border-radius: 10px;
   }
   }
   .burgerOpened{
-    top: 0px;
+    top: -3px;
   }

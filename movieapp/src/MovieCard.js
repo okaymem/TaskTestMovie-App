@@ -12,16 +12,16 @@ function MovieCard({img, title, date, rating, genres, popularity, modal, id}){
  <div className={styles.poster}>{img}</div>
 <div className={styles.cardInside}>
  <p className={styles.title}> {
- title.slice(0, 19)}
+ title.slice(0, 18)}
  { title.length>19?
  <div>
- {title.slice(19, 38)}
+ {title.slice(18, 37)}
  { title.length>38?
  <span>
  <br/>&nbsp;
- {title.slice(38, 57)}</span> : null}
+ {title.slice(37, 56)}</span> : null}
  <br/>&nbsp;
- {title.slice(57)} </div>:null
+ {title.slice(56)} </div>:null
  }</p>
  <p className={styles.date}> {date}</p>
  <p className={styles.rating}> 

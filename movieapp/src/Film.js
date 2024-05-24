@@ -2,7 +2,6 @@ import React from "react";
 import Layout from "./Lay-out";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from 'react'
-import MovieInfoLayOut from "./MovieInfoLayOut";
 import MovieCardBig from "./MovieCardBig";
 import ModalRate from "./Modal";
 import classes from './styles/Cards.module.css';
@@ -40,13 +39,7 @@ useEffect(() => {
   
   
   
-//  fetch(`https://api.themoviedb.org/3/movie/${id}?language=en-US&append_to_response=videos`, options)
-//.then(response => response.json())
-//.then(response => {
-//    response.videos.results=response.videos.results.filter(elemen=> elemen.name == 'Official Trailer').slice(0, 1)
-//    filmInformationChanger(response); 
-//    console.log(response)})
-//.catch(err => console.error(err));
+
 }
 ,[])
  

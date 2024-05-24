@@ -31,17 +31,17 @@ currentContentChanger(currentContent.filter((movie) => inputText.split(" ").join
     return(
   
 <Layout>
-  <div >
+  <div className={styles.ratedWrapper}>
 {
   RatedMovies.length>0? <header className={styles.header}>
-  <h1 style={{display: 'inline-block', marginTop: '35px', marginLeft: '-23px'}}>Rated movies</h1>
+  <h1 className={styles.pageRatedTitle}>Rated movies</h1>
   <TextInput
       onChange={(changes)=>textChanger(changes.target.value)}
       className={styles.inputSearch}
       placeholder="Search movie title"
       size='md'
       rightSectionWidth={88}
-      style={{ width: '490px', marginTop:'39px', marginRight: '-29px'}}
+      
       rightSection={
         <button className={styles.searchButton} onClick={searchHandler}>Search</button>
       }

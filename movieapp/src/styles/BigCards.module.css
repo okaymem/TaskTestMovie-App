@@ -5,7 +5,7 @@
     margin-top: 24px;
 }
 .cardWrapper{
-    width: 66%;
+    width: 80%;
     background-color: #fff;
     height: 400px;
     display: flex;
@@ -85,4 +85,32 @@
     line-height: 20px;
     text-align: left;
     margin-left: 164px;
+}
+@media (max-width: 414px) {
+    .cardWrapper{
+        width: 80%;
+        flex-direction: column;
+        height: 100%;
+    }
+    .poster{
+        margin: 32px auto;
+    }
+    .ModalRate{
+      right: -11px;
+      top:4px;
+      transform: rotate(72deg);
+    }
+    .title{
+        margin-right: 7px;
+        text-align: center;
+    }
+    .date{
+        text-align: center;
+    }
+    .rating{
+        text-align: center;
+    }
+    .darkText{
+        display: block;
+    }
 }

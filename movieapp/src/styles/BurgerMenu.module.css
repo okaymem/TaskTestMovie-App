@@ -1,9 +1,11 @@
 .burgerButton{
-   font-size: 30px;
-    display:none
+    font-size: 30px;
+    display:none;
+    width:30px
 }
 @media (max-width: 414px){
 .burgerButton{
     display: block;
+    
 }
 }
