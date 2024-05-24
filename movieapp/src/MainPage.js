@@ -96,7 +96,7 @@ useEffect(()=>{
 
   async function getGenres() {
     try {
-        const response = await fetch(`http://https://task-test-movie-app-deploy.vercel.app/getgenres`);
+        const response = await fetch(`https://task-test-movie-app-deploy.vercel.app/getgenres`);
         const genres = await response.json();
         console.log(genres);
         setGenres(genres.genres.map(genre => ({value:genre.id, label:genre.name})))
