@@ -8,7 +8,7 @@ const data = [
   { link: '/ratedmovies', label: 'Rated movies',  },
 ];
 
-function Leftmenu(){
+function Leftmenu({isOpened}){
   const router = useNavigate()
   const [active, setActive] = useState('');
   useEffect(() => {
@@ -36,20 +36,17 @@ console.log()
   ));
 
   return (
-    <div className={classes.barWrapper}>
+    <div className={`${classes.barWrapper} ${isOpened ? classes.burgerOpened : ''}`}>
     <nav className={classes.navbar}>
       <div className={classes.navbarMain}>
         <Group className={classes.header} justify="space-between">
          
-          
         </Group>
         <div className={classes.pic}></div>
         {links}
       </div>
-
-   
     </nav>
-    </div>
+  </div>
   );
 }
 
