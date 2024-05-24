@@ -22,7 +22,7 @@ useEffect(() => {
   async function getMovieData() {
     try {
         isLoadingChanger(true)
-        const response = await fetch(`http://localhost:3001/getmoviedata?id=${id}`);
+        const response = await fetch(`https://task-test-movie-app-deploy.vercel.app/getmoviedata?id=${id}`);
         const movieData = await response.json();
         if (movieData.videos && movieData.videos.results) {
             movieData.videos.results = movieData.videos.results.filter(element => element.name === 'Official Trailer').slice(0, 1);
