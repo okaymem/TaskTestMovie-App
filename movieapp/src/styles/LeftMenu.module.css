@@ -61,3 +61,17 @@
   background-color:#E5D5FA;
   color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
 }
+.barWrapper{
+  transition: 0.5s;
+}
+@media (max-width: 450px){
+  .barWrapper{
+    position: absolute;
+    top: -260px;
+    z-index: 1;
+    width: 253px
+  }
+  }
+  .burgerOpened{
+    top: 0px;
+  }

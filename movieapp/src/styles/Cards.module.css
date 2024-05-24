@@ -7,7 +7,7 @@
     margin-top: 24px;
 }
 .cardWrapper{
-    width: 40%;
+    width: 480px;
     background-color: #fff;
     height: 218px;
     display: flex;
@@ -159,6 +159,30 @@
     color: #9854F6;
 
 }
+.pagination{
+    margin: 24px 112px 82px auto
+}
 .selectss{
     background-color:#9854F6;
 }
+@media (max-width: 450px){
+    .wrapper{
+       margin-right: auto;
+        width:400px
+    }
+    .cardWrapper{
+        width:100%
+    }
+    .selects{
+        width:18%;
+        justify-content: center;
+    }
+    .allContent{
+        width: 400px
+        
+    }
+    .pagination{
+        margin: 24px 0 0 0;
+
+    }
+    }
