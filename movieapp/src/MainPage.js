@@ -131,6 +131,16 @@ localStorage.setItem('ratedMoviesList', JSON.stringify(ratedMoviesList))
   rateToHandle(value)
  }
   
+const getGenresOfMovie = (genre_ids) => {
+let result=[]  
+genres.forEach(genre => {
+  if (genre_ids.includes(genre.value)){
+    result.push(genre.label)
+  }
+})
+return result.join(',')
+}
+
  const sortbyChanger = (value) => {
   if (value==='Most Popular'){
     sortbyHandler('popularity.desc')
@@ -151,10 +161,10 @@ localStorage.setItem('ratedMoviesList', JSON.stringify(ratedMoviesList))
    <div className={classes.allContent}>
     <h1 style={{marginRight:'auto',marginLeft:'113px'}}>Movies</h1>
     <div className={classes.selects}>
-    <div><p className={classes.sortTitle}>Genres</p><Select className={classes.selectss} title='Select genre' selectChanger={handleCurrencyChange} selectType={genres}/></div>
-    <div><p className={classes.sortTitle}>Release year</p><Select title='Select release year' selectChanger={yearchanger} selectType={years}/></div> 
-    <div><p className={classes.sortTitle}>Ratings</p><Select style={{width: '3px'}}  title='From' selectType={ratings} selectChanger={ratefromChanger}/></div> 
-    <div  className={classes.sortTo}><Select title='To' selectType={ratings} selectChanger={ratetoChanger}/></div> 
+    <div><p className={classes.sortTitle}>Genres</p><Select className={classes.select} title='Select genre' selectChanger={handleCurrencyChange} selectType={genres}/></div>
+    <div><p className={classes.sortTitle}>Release year</p><Select className={classes.select} title='Select release year' selectChanger={yearchanger} selectType={years}/></div> 
+    <div><p className={classes.sortTitle}>Ratings</p><Select className={classes.select} style={{width: '3px'}}  title='From' selectType={ratings} selectChanger={ratefromChanger}/></div> 
+    <div className={classes.sortTo}><Select className={classes.select} title='To' selectType={ratings} selectChanger={ratetoChanger}/></div> 
      <button onClick={() => {
        rateFromHandle('')
        rateToHandle('')
@@ -169,7 +179,7 @@ localStorage.setItem('ratedMoviesList', JSON.stringify(ratedMoviesList))
 {isLoadind?
      <Loader style={{margin: '20px'}}/> : <div className={classes.wrapper}>{content.map(element=>
 
-<MovieCard genres='Comedy, Drama, Romance' 
+<MovieCard genres={getGenresOfMovie(element.genre_ids)} 
   rating={element.vote_average? element.vote_average.toString().slice(0,3) : '0'}
   id={element.id}
   popularity={

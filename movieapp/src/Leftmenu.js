@@ -4,7 +4,7 @@ import { Group } from '@mantine/core';
 import classes from './styles/LeftMenu.module.css';
 import { useNavigate } from 'react-router-dom';
 const data = [
-  { link: '/', label: 'Movie', },
+  { link: '/', label: 'Movies', },
   { link: '/ratedmovies', label: 'Rated movies',  },
 ];
 
@@ -14,7 +14,7 @@ function Leftmenu({isOpened}){
   useEffect(() => {
     console.log(active)
     if (active) {
-      router(active === 'Movie' ? '/' : '/ratedmovies');
+      router(active === 'Movies' ? '/' : '/ratedmovies');
     }
   }, [active]);
 

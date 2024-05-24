@@ -4,12 +4,14 @@ select{
   background-position: top 14px right 15px;
   
 }
-
+.selectBox option:first-child{
+  display:none
+ }
   .selectBox svg{
    display:none
   }
   
-  @media (max-width: 450px){
+  @media (max-width: 414px){
     select{
       justify-content: center;
     }

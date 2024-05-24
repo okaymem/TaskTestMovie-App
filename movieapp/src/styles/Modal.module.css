@@ -1,6 +1,6 @@
 .buttonStarRated{
     background-repeat:no-repeat;
-    width: 65px;
+    width: 15px;
     height: 28px;
     background-image: url(../images/starrated.png);
     background-color: white;
@@ -10,7 +10,7 @@
 }
 .buttonStarUnrated{
     background-repeat:no-repeat;
-    width: 65px;
+    width: 15px;
     height: 28px;
     background-image: url(../images/starRate.png);
     background-color: white;
